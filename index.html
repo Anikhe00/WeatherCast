@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherCast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="main-container">
+    <div class="weather-input-card">
+      <div class="title">
+        <h2>What is the weather today?</h2>
+      </div>
+
+      <form class="input-form" id="location-form">
+        <input type="text" class="location-input"  id="location-input" placeholder="Enter city name" required>
+        <button id="get-weather">Get Weather</button>
+      </form>
+
+      <div class="weather-result" id="weather-card">
+        <div class="location-and-date">
+          <div class="location-and-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 17.6571L10.601 16.98C11.2829 16.1997 11.8966 15.4571 12.442 14.7524L12.8924 14.1581C14.7737 11.6241 15.7143 9.61365 15.7143 8.12667C15.7143 4.95333 13.1562 2.38095 10.0001 2.38095C6.84386 2.38095 4.28577 4.95333 4.28577 8.12667C4.28577 9.61365 5.2264 11.6244 7.10767 14.159L7.55815 14.7533C8.33676 15.7508 9.15127 16.7187 10.0001 17.6571Z" stroke="#293A52" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.0001 10.4762C11.3151 10.4762 12.381 9.4102 12.381 8.09524C12.381 6.78027 11.3151 5.71428 10.0001 5.71428C8.68513 5.71428 7.61914 6.78027 7.61914 8.09524C7.61914 9.4102 8.68513 10.4762 10.0001 10.4762Z" stroke="#293A52" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            <p id="location">Location</p>
+          </div>
+
+          <p id="date">Date</p>
+        </div>
+
+        
+        <div class="temp-and-unit">
+            <div class="temp-and-weather-type">
+              <h1 id="temperature">0</h1>
+              <p id="temp-text">Weather type</p>
+
+            </div>
+           
+            <p id="unit">°C</p>
+        </div>
+
+        <div class="other-units">
+          <div class="unit">
+            <p class="title2">Humidity</p>
+            <p class="the-unit" id="humidity">0%</p>
+          </div>
+
+          <div class="unit">
+            <p class="title2">Precipitation</p>
+            <p class="the-unit" id="precipitation">0%</p>
+          </div>
+
+          <div class="unit">
+            <p class="title2">Wind</p>
+            <p class="the-unit" id="wind">0km/h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="greetings">Made with love by <a class="link" href="https://shakeerah.framer.website/" target="_blank" rel="noopener noreferrer">Shakirat Akanji</a></p>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
