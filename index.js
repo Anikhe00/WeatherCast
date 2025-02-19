@@ -25,9 +25,6 @@ form.addEventListener("submit", function(event){
       const iconCode = weatherData.weather[0].icon
       const iconURL = `https://openweathermap.org/img/wn/${iconCode}@2x.png`
 
-
-      console.log(weatherData)
-
       locationEl.textContent = `${weatherData.name}, ${weatherData.sys.country}`
       const tempInCelsius = Math.round(weatherData.main.temp - 273.15)
       temperature.textContent = tempInCelsius
@@ -46,7 +43,7 @@ function formatDate() {
   const today = new Date();
   
   const options = { 
-    weekday: "long", 
+    // weekday: "long", 
     year: "numeric", 
     month: "long", 
     day: "numeric" 
